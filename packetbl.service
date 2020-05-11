@@ -1,0 +1,10 @@
+[Unit]
+Description=PacketBL
+
+[Service]
+Type=forking
+EnvironmentFile=-/etc/sysconfig/packetbl
+ExecStart=/usr/bin/packetbl $OPTIONS
+
+[Install]
+WantedBy=multi-user.target
