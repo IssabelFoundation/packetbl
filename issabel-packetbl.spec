@@ -8,6 +8,7 @@ License: GPL
 Group: System
 Url: http://www.issabel.org
 Source0: issabel-%{modname}-%{version}.tar.gz
+Source1: libpool.h
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 
 BuildRequires:	dotconf-devel
@@ -27,6 +28,7 @@ and uses Netfilter/iptables to block them if they're listed.
 
 %prep
 %setup -n %{name}-%{version}
+cp %{SOURCE1} /usr/include
 
 %build
 %configure --with-cache --with-stats 
