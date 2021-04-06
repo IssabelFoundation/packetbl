@@ -1,13 +1,13 @@
 %define modname packetbl
 
 Summary: Packet Blacklist
-Name: issabel-%{modname}
+Name: issabel-packetbl
 Version: 1.0
 Release: 1
 License: GPL
 Group: System
 Url: http://www.issabel.org
-Source0: %{modname}_%{version}-%{release}.tgz
+Source0: issabel-%{modname}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 
 BuildRequires:	dotconf-devel
@@ -26,7 +26,7 @@ Packetbl checks IP addresses of incoming connections against RBLs
 and uses Netfilter/iptables to block them if they're listed.
 
 %prep
-%setup -n %{name}_%{version}-%{release}
+%setup -n %{name}-%{version}
 
 %build
 %configure --with-cache --with-stats 
