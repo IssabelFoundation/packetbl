@@ -9,6 +9,7 @@ Group: System
 Url: http://www.issabel.org
 Source0: issabel-%{modname}-%{version}.tar.gz
 Source1: libpool.h
+Source2: libpool.a
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 
 BuildRequires:	dotconf-devel
@@ -29,6 +30,7 @@ and uses Netfilter/iptables to block them if they're listed.
 %prep
 %setup -n %{name}-%{version}
 cp %{SOURCE1} /usr/include
+cp %{SOURCE2} /usr/lib64
 
 %build
 %configure --with-cache --with-stats 
