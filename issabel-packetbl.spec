@@ -32,6 +32,7 @@ cp %{SOURCE1} /usr/include
 
 %build
 %configure --with-cache --with-stats 
+mkdir bin
 %__make
 
 %install
