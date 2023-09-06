@@ -3,7 +3,7 @@
 Summary: Packet Blacklist
 Name: issabel-packetbl
 Version: 1.0
-Release: 1
+Release: 3
 License: GPL
 Group: System
 Url: http://www.issabel.org
@@ -20,7 +20,7 @@ BuildRequires:  openssl-devel
 Buildrequires:  ldns-devel
 
 Requires:       libnetfilter_queue
-Requires:       fail2ban-server
+Requires:       fail2ban-server >= 1.0.2
 
 
 %description
