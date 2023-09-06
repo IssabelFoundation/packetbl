@@ -17,7 +17,7 @@ BuildRequires:  /usr/include/dotconf.h
 BuildRequires:	libnetfilter_queue-devel
 BuildRequires:	libnfnetlink-devel
 BuildRequires:  openssl-devel
-Buildrequires:  ldns-devel
+BuildRequires:  ldns-devel
 
 Requires:       libnetfilter_queue
 Requires:       fail2ban-server >= 1.0.2
